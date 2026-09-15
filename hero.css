@@ -1,0 +1,18 @@
+.hero h1 em {
+  color: #416900;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 800;
+  white-space: nowrap;
+  letter-spacing: -.045em;
+}
+
+body[data-theme="dark"] .hero h1 em {
+  color: #d8fa54;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme]) .hero h1 em {
+    color: #d8fa54;
+  }
+}

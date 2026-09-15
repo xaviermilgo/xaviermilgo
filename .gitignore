@@ -1,0 +1,11 @@
+.DS_Store
+.~lock.*
+
+# Private working documents and local credentials never belong in this site.
+*.docx
+*.pdf
+CV.md
+.env
+.env.*
+*.pem
+*.key

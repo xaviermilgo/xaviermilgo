@@ -1,0 +1,41 @@
+/* Use spacing for structure; reserve lines for interactive cues. */
+.gallery,
+.project,
+.project:last-child,
+.project-shot,
+.skill-list,
+.skill-list li,
+.contact,
+footer {
+  border: 0;
+}
+
+.portrait::after {
+  display: none;
+}
+
+.theme-toggle {
+  border: 0;
+  background: var(--surface);
+}
+
+.skill-projects {
+  gap: 8px 16px;
+}
+
+.skill-projects a,
+.skill-projects span {
+  border: 0;
+  border-radius: 0;
+  padding: 3px 0;
+}
+
+.skill-projects a {
+  text-decoration: underline;
+  text-decoration-color: #587166;
+  text-underline-offset: 4px;
+}
+
+.skill-projects a:hover {
+  text-decoration-color: currentColor;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xavier Kibet — backend engineer and product builder for on-chain systems." />
+    <title>Xavier Kibet — Systems, data, and shipped products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="screenshots.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="skills-list.css" />
+    <link rel="stylesheet" href="surfaces.css" />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script defer src="theme.js"></script>
+    <script defer src="lightbox.js"></script>
+    <script defer src="gallery.js"></script>
+    <script defer src="contact.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Xavier Kibet home">XK<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#timeline">Timeline</a></nav>
+      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button><a class="availability" href="#contact">Get in touch</a></div>
+    </header>
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy"><p class="kicker">Xavier Kibet · Nairobi, Kenya · Remote</p><h1>I build <em>on-chain</em> systems and products.</h1><p class="lede">Backend engineer and product builder. I work across data, infrastructure and the product layer that makes difficult systems usable.</p><div class="hero-actions"><a class="button dark" href="#work">Selected work <b>↓</b></a><a class="inline-link" href="mailto:xavierkibet@gmail.com">Get in touch <b>↗</b></a></div></div>
+        <figure class="portrait"><img src="assets/xavier-kibet.jpg" alt="Xavier Kibet" /><figcaption>Hands-on engineer<br />Product builder</figcaption></figure>
+      </section>
+      <section id="work" class="gallery wrap">
+        <header class="section-heading work-heading">
+          <div><p class="kicker">Selected work</p><h2>Products I’ve built.</h2></div>
+          <nav class="work-nav" aria-label="Projects by ecosystem">
+            <a id="evm-tab" href="?ecosystem=evm#work" data-ecosystem="evm">Ethereum / EVM</a>
+            <a id="solana-tab" href="?ecosystem=solana#work" data-ecosystem="solana">Solana</a>
+          </nav>
+        </header>
+        <section class="work-group" id="evm-work" aria-labelledby="evm-work-title">
+          <h2 class="work-group-title" id="evm-work-title">Ethereum / EVM <span>2 projects</span></h2>
+          <article class="project gemgunner"><div class="project-copy"><p class="project-number">GemGunner <span>· Contract discovery</span></p><h3>I turned <mark>70k+ Ethereum contracts</mark> into a way to find unusual code.</h3><p>GemGunner collected contracts, read their source, compared patterns, and made the results searchable.</p><ul class="project-skills" aria-label="Skills used in this project"><li><strong>Go + Ethereum</strong><span>Collect verified smart-contract source</span></li><li><strong>Elasticsearch</strong><span>Index contracts for search and comparison</span></li><li><strong>React</strong><span>Contract discovery and source-code views</span></li></ul><a class="inline-link" href="projects/gemgunner/">Read more <b>↗</b></a></div><figure class="visual project-shot" tabindex="0" role="button" aria-label="Open image"><img src="projects/gemgunner/assets-screenshot.png" alt="GemGunner homepage showing contract discovery product" /></figure></article>
+          <article class="project borrowgas reverse">
+          <div class="project-copy">
+            <p class="project-number">Borrow Gas <span>· Gas fee lending</span></p>
+            <h3>I built a way to <mark>borrow transaction fees</mark> using wallet history.</h3>
+            <p>Borrow Gas used past gas spending to calculate a borrowing limit, helping users who had run out of funds for transaction fees.</p>
+            <ul class="project-skills" aria-label="Skills used in this project">
+              <li><strong>Go</strong><span>Wallet scoring and loan-quote APIs</span></li>
+              <li><strong>EVM</strong><span>Transaction history and gas-fee analysis</span></li>
+              <li><strong>React + ethers.js</strong><span>Wallet connection and borrowing screens</span></li>
+            </ul>
+            <a class="inline-link" href="projects/borrow-gas/">Read more <b>↗</b></a>
+          </div>
+          <figure class="visual project-shot" tabindex="0" role="button" aria-label="Open Borrow Gas image"><img src="projects/borrow-gas/assets/product-screen.png" alt="Borrow Gas interface showing an AVAX borrowing amount and available limit" /></figure>
+        </article>
+        </section>
+        <section class="work-group" id="solana-work" aria-labelledby="solana-work-title">
+          <h2 class="work-group-title" id="solana-work-title">Solana <span>2 projects</span></h2>
+          <article class="project mintlab"><div class="project-copy"><p class="project-number">MintLab <span>· Memecoin launchpad</span></p><h3>I built a Solana address tool used for <mark>100+ token launches.</mark></h3><p>It searched for memorable token addresses, then took people through launch. A single RTX 3090 found seven-character matches in under five minutes.</p><ul class="project-skills" aria-label="Skills used in this project"><li><strong>Go</strong><span>Address-search and token-launch APIs</span></li><li><strong>Solana</strong><span>Wallet signing and token deployment</span></li><li><strong>React</strong><span>Search, payment and launch screens</span></li></ul><a class="inline-link" href="projects/mintlab/">Read more <b>↗</b></a></div><figure class="visual project-shot" tabindex="0" role="button" aria-label="Open image"><img src="projects/mintlab/assets/product-screen.png" alt="MintLab product interface" /></figure></article>
+          <article class="project holdermaps reverse"><div class="project-copy"><p class="project-number">HolderMaps <span>· Token ownership maps</span></p><h3>I made <mark>2m+ Solana wallet relationships</mark> easier to see.</h3><p>HolderMaps turned token ownership from a table of addresses into a visual map people could inspect.</p><ul class="project-skills" aria-label="Skills used in this project"><li><strong>Go + Dune</strong><span>Collect and process Solana ownership data</span></li><li><strong>Elasticsearch</strong><span>Index wallet relationships for lookup</span></li><li><strong>React + D3</strong><span>Interactive maps of token holders</span></li></ul><a class="inline-link" href="projects/holdermaps/">Read more <b>↗</b></a></div><figure class="visual project-shot" tabindex="0" role="button" aria-label="Open image"><img src="projects/holdermaps/assets/product-screen.png" alt="HolderMaps token ownership product interface" /></figure></article>
+        </section>
+      </section>
+      <section id="skills" class="skills"><div class="wrap"><header class="section-heading"><p class="kicker">Skills</p><h2>The skills behind my work.</h2><p class="skills-intro">This is my core skillset.</p></header><ol class="skill-list"><li><span class="skill-count">01</span><div><h3>Go, Node.js &amp; APIs</h3><p class="experience-note"><strong>Go + Node.js · 5+ years</strong></p><p>Build the services and data layer that products depend on.</p><p class="skill-tech">Go · TypeScript · Node.js · PostgreSQL · Redis · Elasticsearch</p><div class="skill-projects"><a href="projects/mintlab/">MintLab <b>↗</b></a><a href="projects/holdermaps/">HolderMaps <b>↗</b></a><a href="projects/gemgunner/">GemGunner <b>↗</b></a></div></div></li><li><span class="skill-count">02</span><div><h3>Solana, EVM &amp; wallet flows</h3><p class="experience-note"><strong>Ethereum / EVM · 2+ years &nbsp; · &nbsp; Solana · 2+ years</strong></p><p>Make chain interactions, signing, and transaction state work in a product.</p><p class="skill-tech">Solana · EVM · Wallet adapters · Smart contracts · Transaction flows</p><div class="skill-projects"><a href="projects/mintlab/">MintLab <b>↗</b></a><a href="projects/gemgunner/">GemGunner <b>↗</b></a></div></div></li><li><span class="skill-count">03</span><div><h3>Dune, Elasticsearch &amp; data pipelines</h3><p class="experience-note"><strong>Dune · 2+ years &nbsp; · &nbsp; Elasticsearch · 2+ years</strong></p><p>Turn raw blockchain activity into data people can search, inspect, and use.</p><p class="skill-tech">Data ingestion · Indexing · Dune · Elasticsearch · Solana data</p><div class="skill-projects"><a href="projects/holdermaps/">HolderMaps <b>↗</b></a><a href="projects/gemgunner/">GemGunner <b>↗</b></a></div></div></li><li><span class="skill-count">04</span><div><h3>Docker, Kubernetes &amp; cloud</h3><p class="experience-note"><strong>Docker / Kubernetes · 4+ years</strong></p><p>Deploy and operate systems that stay available as product usage grows.</p><p class="skill-tech">Docker · Kubernetes · Cloud infrastructure · CI/CD · Observability</p><div class="skill-projects"><span>Production infrastructure</span></div></div></li><li><span class="skill-count">05</span><div><h3>React, TypeScript &amp; D3</h3><p class="experience-note"><strong>React · 7+ years</strong></p><p>Turn complex data and blockchain workflows into useful, usable interfaces.</p><p class="skill-tech">React · TypeScript · D3 · Wallet UX · Data visualisation</p><div class="skill-projects"><a href="projects/mintlab/">MintLab <b>↗</b></a><a href="projects/holdermaps/">HolderMaps <b>↗</b></a></div></div></li></ol></div></section>
+      <section id="timeline" class="timeline wrap" aria-labelledby="timeline-title">
+        <header class="timeline-heading"><h2 id="timeline-title">Work timeline.</h2><p>From internal tools to products of my own.</p></header>
+        <ol class="timeline-rows">
+          <li class="timeline-row" data-era="web3" id="timeline-web3">
+            <p class="timeline-date"><span class="timeline-era">Web 3 journey</span><strong>2024 — now</strong><span>Since March 2024</span></p>
+            <article><p class="timeline-company">Independent work</p><h3>Founder &amp; engineer</h3><p>Built and ran my own Web 3 products, owning the backend, interface, launch, and operations.</p><div class="timeline-projects"><a href="projects/mintlab/">MintLab ↗</a><a href="projects/holdermaps/">HolderMaps ↗</a><a href="projects/borrow-gas/">Borrow Gas ↗</a><a href="projects/gemgunner/">GemGunner ↗</a></div></article>
+          </li>
+          <li class="timeline-row" data-era="web2" id="timeline-web2">
+            <p class="timeline-date"><span class="timeline-era">Web 2</span><strong>2022 — 2024</strong><span>Jan 2022 – Feb 2024</span></p>
+            <article><p class="timeline-company">Novek <span>Promotion</span></p><h3>Team Lead / Senior Full-Stack Engineer</h3><p>Led three developers and operated production data systems. Cut cloud costs by <strong>50%</strong> while maintaining <strong>99.5% ingestion uptime.</strong></p></article>
+          </li>
+          <li class="timeline-row" data-era="web2">
+            <p class="timeline-date"><strong>2020 — 2022</strong><span>Oct 2020 – Jan 2022</span></p>
+            <article><p class="timeline-company">Novek</p><h3>Full-Stack Web Developer</h3><p>Built a multi-tenant ERP that tracked <strong>3m+ transactions</strong> over two years. Migrated infrastructure from Azure VMs to Kubernetes.</p></article>
+          </li>
+          <li class="timeline-row" data-era="early" id="timeline-early">
+            <p class="timeline-date"><span class="timeline-era">Early work</span><strong>2020</strong><span>Feb – Oct 2020</span></p>
+            <article><p class="timeline-company">Moringa School · Marketing</p><h3>Webmaster</h3><p>Built a lead-to-student pipeline to track acquisition costs and maintained the school’s website.</p></article>
+          </li>
+          <li class="timeline-row" data-era="early">
+            <p class="timeline-date"><strong>2018 — 2020</strong><span>Oct 2018 – Feb 2020</span></p>
+            <article><p class="timeline-company">Moringa School · Infrastructure</p><h3>Software Developer</h3><p>Built job matching across <strong>11+ job sites</strong> and automated assignment grading for teachers.</p></article>
+          </li>
+        </ol>
+        <p class="timeline-origin"><strong>September 2018</strong> Full Stack Web Developer certification · Moringa School</p>
+      </section>
+      <section id="contact" class="contact wrap" aria-labelledby="contact-title">
+        <p class="kicker">Open to work</p>
+        <h2 id="contact-title">Let’s work together.</h2>
+        <p>Open to backend and full-stack engineering roles.<br />Based in Nairobi. Available remotely.</p>
+        <div class="contact-links">
+          <div class="contact-email">
+            <a class="button acid" href="mailto:xavierkibet@gmail.com">xavierkibet@gmail.com <b aria-hidden="true">↗</b></a>
+            <button class="copy-email" type="button" data-email="xavierkibet@gmail.com">Copy email</button>
+            <span class="copy-status" role="status" aria-live="polite"></span>
+          </div>
+          <a class="contact-social" href="https://twitter.com/xaviermilgo" target="_blank" rel="noreferrer"><span>Twitter</span><strong>@xaviermilgo <b aria-hidden="true">↗</b></strong></a>
+          <a class="contact-social" href="https://github.com/xaviermilgo" target="_blank" rel="noreferrer"><span>GitHub</span><strong>xaviermilgo <b aria-hidden="true">↗</b></strong></a>
+        </div>
+      </section>
+    </main><dialog class="lightbox" aria-label="Expanded project image"><button class="lightbox-close" type="button" aria-label="Close expanded image">×</button><img class="lightbox-image" alt="" /></dialog><footer><span>© Xavier Kibet</span></footer>
+  </body>
+</html>

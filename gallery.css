@@ -1,0 +1,145 @@
+.work-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.work-nav {
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.work-nav a {
+  padding: 12px 14px;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.work-nav a[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+.work-nav a:hover {
+  color: var(--ink);
+}
+
+.has-tabs .work-group-title {
+  display: none;
+}
+
+.has-tabs .work-group {
+  margin-top: 0;
+}
+
+.work-group[hidden] {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .work-heading {
+    flex-wrap: wrap;
+  }
+  .work-nav {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-nav {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 14px;
+  }
+}
+
+.work-nav a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.work-group {
+  scroll-margin-top: 100px;
+}
+
+.work-group + .work-group {
+  margin-top: 40px;
+}
+
+.work-group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 0 0 20px;
+  color: var(--ink);
+  font-size: 24px;
+  letter-spacing: -.03em;
+}
+
+.work-group-title span {
+  color: var(--muted);
+  font: 500 12px/1.4 "DM Mono", monospace;
+  letter-spacing: 0;
+}
+
+.project-skills {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 20px;
+}
+
+.project-skills li {
+  padding: 3px 0;
+  line-height: 1.5;
+}
+
+.project-skills strong {
+  color: var(--ink);
+  font: 800 16px/1.5 "Manrope", sans-serif;
+  letter-spacing: -.02em;
+}
+
+.project-skills span {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.project-skills span::before {
+  content: " — ";
+}
+
+.project h3 mark {
+  color: #416900;
+  background: transparent;
+}
+
+.project-number {
+  font: 800 22px/1.15 "Manrope", sans-serif;
+  letter-spacing: -.025em;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.project-number span {
+  font: 500 12px/1.2 "DM Mono", monospace;
+  letter-spacing: .02em;
+  color: var(--muted);
+}
+
+body[data-theme="dark"] .project h3 mark {
+  color: #d8fa54;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme]) .project h3 mark {
+    color: #d8fa54;
+  }
+}
