@@ -3,24 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Borrow Gas — Xavier Kibet</title><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-  <link rel="stylesheet" href="../archive.css">
+  <meta name="description" content="Borrow Gas — Help a wallet keep moving when it runs out of transaction fees. A project by Xavier Kibet.">
+  <title>Borrow Gas — Xavier Kibet</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../screenshots.css">
+  <link rel="stylesheet" href="../../surfaces.css">
+  <link rel="stylesheet" href="../../contact.css">
+  <link rel="stylesheet" href="../project.css">
+  <script defer src="../../theme.js"></script>
+  <script defer src="../../lightbox.js"></script>
+  <script defer src="../demo-embed.js"></script>
 </head>
-<body>
-  <div class="archive-note"><div class="shell">Borrow Gas is wound down. Borrowing and wallet connections are no longer available.</div></div>
-  <header class="top shell"><a class="back" href="../../#work">← Selected work</a><strong>Borrow Gas</strong></header>
-  <main class="shell">
-    <section class="hero"><p class="eyebrow">Gas fee lending</p><h1>Borrow Gas</h1><p>A way to borrow transaction fees based on a wallet’s previous gas spending.</p></section>
-    <section class="section">
-      <h2>What I built</h2>
-      <div class="grid">
-        <article class="card"><h3>Go</h3><p>Services that read wallet activity, calculate gas spending, and produce loan quotes.</p></article>
-        <article class="card"><h3>EVM data</h3><p>Transaction-history analysis to turn previous gas spending into a borrowing limit.</p></article>
-        <article class="card"><h3>React + ethers.js</h3><p>Wallet connection, borrowing-limit display, and loan-request screens.</p></article>
+<body class="case-page">
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="Xavier Kibet home">XK<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="../../#work">Work</a><a href="../../#skills">Skills</a><a href="../../#timeline">Timeline</a></nav>
+    <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button><a class="availability" href="../../#contact">Get in touch</a></div>
+  </header>
+  <main class="wrap">
+    <a class="case-back" href="../../?ecosystem=evm#work">← Selected work</a>
+    <section class="case-hero" aria-labelledby="project-title">
+      <div>
+        <p class="kicker">Gas fee access · EVM</p>
+        <h1 id="project-title">Borrow Gas</h1>
+        <p class="case-lede">Help a wallet keep moving when it runs out of transaction fees.</p>
+        <div class="case-actions"><a class="button acid" href="#demo">Try the demo <b aria-hidden="true">↓</b></a><a class="inline-link" href="#engineering">How it works <b aria-hidden="true">↓</b></a></div>
+      </div>
+      <div class="case-media">
+        <figure class="project-shot borrow-shot" tabindex="0" role="button" aria-label="Enlarge Borrow Gas screenshot"><img src="assets/product-screen.png" alt="Original Borrow Gas interface showing a 10 AVAX borrowing limit" fetchpriority="high"></figure>
+        <p class="case-caption">The original AVAX borrowing interface—not the current swap demo.</p>
       </div>
     </section>
-    <section class="section"><h2>The product</h2><div class="shots"><img src="assets/product-screen.png" alt="Borrow Gas AVAX borrowing form and available limit"></div></section>
+    <dl class="case-facts">
+      <div><dt>My role</dt><dd>Product & engineering</dd></div>
+      <div><dt>Original product</dt><dd>Wallet-history-based limits</dd></div>
+      <div><dt>Core technologies</dt><dd>Go · EVM · React</dd></div>
+    </dl>
+    <section id="demo" class="case-demo embedded-demo" aria-labelledby="demo-title">
+      <header class="demo-section-heading"><div><p class="kicker">Try it here</p><h2 id="demo-title">Borrow Gas, in action.</h2></div><a class="inline-link" href="https://demos.xaviermilgo.com/borrow-gas/" target="_blank" rel="noopener noreferrer">Open in new tab <b aria-hidden="true">↗</b></a></header>
+      <p class="demo-context">Choose Polygon or Solana. This is a capped mainnet prototype with a shared demo wallet, not a lending service. The original product is wound down; the demonstration is a newer implementation.</p>
+      <p class="demo-wallet-note">Use the demo wallet here. For your own wallet, open the demo in a new tab.</p>
+      <div class="demo-frame-wrap">
+        <iframe class="demo-frame" src="https://demos.xaviermilgo.com/borrow-gas/?embed=1#demo" title="Borrow Gas interactive demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" allow="clipboard-write" data-demo-origin="https://demos.xaviermilgo.com"></iframe>
+      </div>
+      <p class="demo-load-status" role="status">Loading the demo. You can also <a href="https://demos.xaviermilgo.com/borrow-gas/" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
+    </section>
+    <section class="case-section" aria-labelledby="ownership-title">
+      <h2 id="ownership-title">What I built.</h2>
+      <div class="case-body"><p>The original Borrow Gas product used past gas spending to calculate a borrowing limit. I built the wallet-data services, quote APIs and borrowing interface.</p>
+        <p>The new demo takes a different approach: <strong>swap existing USDC for gas, with no initial native balance and no loan.</strong> It runs on Polygon and Solana, separately from the original lending flow.</p></div>
+    </section>
+    <section class="case-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">The skills behind it.</h2>
+      <div class="case-body"><ul class="case-tech"><li><h3>Go + EVM data</h3><p>Read wallet history, calculate gas spending and produce loan quotes in the original product.</p></li><li><h3>React + ethers.js</h3><p>Connect wallets and present borrowing limits and transaction screens.</p></li><li><h3>EVM + Solana</h3><p>The current demo adds signed, sponsored swaps with constrained routes, repayment and durable spending limits.</p></li></ul></div>
+    </section>
+    <section id="engineering" class="case-section" aria-labelledby="engineering-title">
+      <h2 id="engineering-title">How it works.</h2>
+      <div class="case-body"><ol class="case-flow"><li><h3>Start without native gas</h3><p>The demo wallet holds 0.25 USDC and no POL or SOL. A sponsor covers the transaction’s initial gas requirement.</p></li><li><h3>Review and authorise</h3><p>The user reviews the amount and minimum output. Real-wallet mode requires their signature; demo mode uses a dedicated server-controlled wallet.</p></li><li><h3>Swap and repay together</h3><p>Exchange USDC for native gas and reimburse the sponsor within the transaction. The Solana proof delivered 0.002514415 SOL from 0.25 USDC, starting at zero SOL.</p></li></ol></div>
+    </section>
+    <nav class="case-next" aria-label="Project navigation"><a class="inline-link" href="../../#work">All projects <b aria-hidden="true">↗</b></a><div><p class="kicker">Next project</p><a href="../mintlab/">MintLab <span aria-hidden="true">→</span></a></div></nav>
   </main>
-  <footer class="shell footer"><a href="../../#work">Back to selected work</a></footer>
+  <footer><span>Xavier Kibet</span><a href="../../#contact">Let’s work together ↗</a></footer>
+  <dialog class="lightbox" aria-label="Borrow Gas screenshot"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>
 </body>
 </html>

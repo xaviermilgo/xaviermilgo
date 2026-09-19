@@ -1,6 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GemGunner archive — Xavier Kibet</title><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../archive.css"></head><body><div class="archive-note"><div class="shell">ARCHIVE MODE — GemGunner is not operating. This page recreates the product’s data path from preserved query and backend work; it is not a live contract index.</div></div><header class="top shell"><a class="back" href="../../">← Xavier Kibet</a><strong>GemGunner / archive</strong></header><main class="shell"><section class="hero"><p class="eyebrow">Ethereum contract discovery · 2024</p><h1>GemGunner</h1><p>A product for finding unusual Ethereum contracts. I built the path from contract discovery through source retrieval and analysis to a searchable product.</p></section><section class="section"><h2>Preserved system path</h2><div class="pipeline"><article class="stage"><span>01</span><h3>Discover</h3><p>Find new Ethereum contract deployments and select the ones worth examining.</p></article><article class="stage"><span>02</span><h3>Fetch source</h3><p>Collect verified source code and contract metadata for analysis.</p></article><article class="stage"><span>03</span><h3>Analyse</h3><p>Parse the implementation into features and patterns that can be compared.</p></article><article class="stage"><span>04</span><h3>Index</h3><p>Store results for discovery, search, and ranking.</p></article></div></section><section class="section"><h2>What remains from the build</h2><div class="grid"><article class="card"><h3>70k+ contracts</h3><p>The system ingested and analysed more than 70,000 Ethereum contracts.</p></article><article class="card"><h3>Backend work</h3><p>Preserved Go and Dune-query code documents the ingestion and analysis side of the product.</p></article><article class="card"><h3>Why this is an archive</h3><p>The live discovery UI was not preserved locally, so this page does not manufacture screenshots or present stale results as current.</p></article><article class="card"><h3>Useful evidence</h3><p>The value here is the repeatable data and indexing approach: raw chain activity becomes something a user can search and understand.</p></article></div></section><section class="section"><h2>Query layer</h2><pre class="query">SELECT contract_address, block_time, tx_hash
-FROM ethereum.traces
-WHERE type = 'create' AND success = true
-ORDER BY block_time DESC;
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GemGunner — Find unusual code across thousands of Ethereum contracts. A project by Xavier Kibet.">
+  <title>GemGunner — Xavier Kibet</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../screenshots.css">
+  <link rel="stylesheet" href="../../surfaces.css">
+  <link rel="stylesheet" href="../../contact.css">
+  <link rel="stylesheet" href="../project.css">
+  <script defer src="../../theme.js"></script>
+  <script defer src="../../lightbox.js"></script>
+  <script defer src="../demo-embed.js"></script>
+</head>
+<body class="case-page">
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="Xavier Kibet home">XK<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="../../#work">Work</a><a href="../../#skills">Skills</a><a href="../../#timeline">Timeline</a></nav>
+    <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button><a class="availability" href="../../#contact">Get in touch</a></div>
+  </header>
+  <main class="wrap">
+    <a class="case-back" href="../../?ecosystem=evm#work">← Selected work</a>
+    <section class="case-hero" aria-labelledby="project-title">
+      <div>
+        <p class="kicker">Contract discovery · Ethereum</p>
+        <h1 id="project-title">GemGunner</h1>
+        <p class="case-lede">Find unusual code across thousands of Ethereum contracts.</p>
+        <div class="case-actions"><a class="button acid" href="#demo">Try the demo <b aria-hidden="true">↓</b></a><a class="inline-link" href="#engineering">How it works <b aria-hidden="true">↓</b></a></div>
+      </div>
+      <div class="case-media">
+        <figure class="project-shot" tabindex="0" role="button" aria-label="Enlarge GemGunner screenshot"><img src="assets-screenshot.png" alt="GemGunner contract discovery interface" fetchpriority="high"></figure>
+      </div>
+    </section>
+    <dl class="case-facts">
+      <div><dt>My role</dt><dd>Founder & engineer</dd></div>
+      <div><dt>Original product</dt><dd>70k+ contracts analysed</dd></div>
+      <div><dt>Core technologies</dt><dd>Go · Ethereum · Elasticsearch</dd></div>
+    </dl>
+    <section id="demo" class="case-demo embedded-demo" aria-labelledby="demo-title">
+      <header class="demo-section-heading"><div><p class="kicker">Try it here</p><h2 id="demo-title">GemGunner, in action.</h2></div><a class="inline-link" href="https://demos.xaviermilgo.com/gemgunner/" target="_blank" rel="noopener noreferrer">Open in new tab <b aria-hidden="true">↗</b></a></header>
+      <p class="demo-context">Browse a frozen Ethereum dataset, inspect contract groups and explore available function findings. Its 60-day deployment window ends September 15, 2026; these are historical results, not a live feed.</p>
 
--- downstream: fetch verified source → parse → score → index</pre></section></main><footer class="shell footer">Built by Xavier Kibet · <a href="../../">Back to portfolio</a></footer></body></html>
+      <div class="demo-frame-wrap">
+        <iframe class="demo-frame" src="https://demos.xaviermilgo.com/gemgunner/?embed=1" title="GemGunner interactive demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" allow="clipboard-write" data-demo-origin="https://demos.xaviermilgo.com"></iframe>
+      </div>
+      <p class="demo-load-status" role="status">Loading the demo. You can also <a href="https://demos.xaviermilgo.com/gemgunner/" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
+    </section>
+    <section class="case-section" aria-labelledby="ownership-title">
+      <h2 id="ownership-title">What I built.</h2>
+      <div class="case-body"><p>I built GemGunner to make Ethereum contracts searchable and comparable. The original system collected and analysed <strong>more than 70,000 contracts.</strong></p>
+        <p>I owned the path from finding deployments and retrieving verified source to indexing the results and making them useful in a discovery interface.</p></div>
+    </section>
+    <section class="case-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">The skills behind it.</h2>
+      <div class="case-body"><ul class="case-tech"><li><h3>Go + Ethereum</h3><p>Collect contract deployments, retrieve verified source and prepare contracts for analysis.</p></li><li><h3>Elasticsearch</h3><p>Index contracts and their extracted features for search and comparison.</p></li><li><h3>React</h3><p>Build the discovery interface and source-code views.</p></li></ul></div>
+    </section>
+    <section id="engineering" class="case-section" aria-labelledby="engineering-title">
+      <h2 id="engineering-title">How it works.</h2>
+      <div class="case-body"><ol class="case-flow"><li><h3>Find deployments</h3><p>Start with contracts deployed directly by externally owned accounts, rather than treating every factory-created contract as a separate discovery.</p></li><li><h3>Retrieve and compare</h3><p>Collect available source and metadata, then extract features that make contracts comparable. Missing source or ABI data stays explicitly unavailable.</p></li><li><h3>Make unusual patterns searchable</h3><p>Index the results for discovery. The frozen demo also exposes available ABI function findings and rarity scores, so users can inspect the evidence behind a result.</p></li></ol></div>
+    </section>
+    <nav class="case-next" aria-label="Project navigation"><a class="inline-link" href="../../#work">All projects <b aria-hidden="true">↗</b></a><div><p class="kicker">Next project</p><a href="../borrow-gas/">Borrow Gas <span aria-hidden="true">→</span></a></div></nav>
+  </main>
+  <footer><span>Xavier Kibet</span><a href="../../#contact">Let’s work together ↗</a></footer>
+  <dialog class="lightbox" aria-label="GemGunner screenshot"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>
+</body>
+</html>

@@ -1,1 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MintLab archive — Xavier Kibet</title><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../archive.css"><script defer src="app.js"></script></head><body><div class="archive-note"><div class="shell">ARCHIVE MODE — MintLab is wound down. This page is a safe, static product record: no wallet connection, payments, or deployments are available.</div></div><header class="top shell"><a class="back" href="../../">← Xavier Kibet</a><strong>MintLab / archive</strong></header><main class="shell"><section class="hero"><p class="eyebrow">Solana launch tooling · 2025–2026</p><h1>MintLab</h1><p>A static look at the product I built for token creators: find a memorable Solana address, choose it, and take it through a launch flow.</p></section><section class="section"><h2>Try the preserved search interaction</h2><div class="demo"><label for="term">SEARCH A PREFIX OR SUFFIX — STATIC RESULTS ONLY</label><div class="demo-row"><input id="term" value="cat" maxlength="7" autocomplete="off"><button id="search">Search</button></div><ul class="results" id="results"></ul></div></section><section class="section"><h2>What the product did</h2><div class="grid"><article class="card"><h3>Fast address search</h3><p>Seven-character addresses were available in under five minutes on one RTX 3090. The production system used a custom GPU kernel for longer searches.</p></article><article class="card"><h3>Launch flow</h3><p>The product carried a creator from address selection through token details, distribution, payment, and deployment.</p></article><article class="card"><h3>100+ deployments</h3><p>MintLab reached more than 100 deployments and 500+ followers before I wound it down when operating the marketing channel stopped making economic sense.</p></article><article class="card"><h3>What is preserved</h3><p>The product interactions and visual design are preserved here. Actions that could touch a wallet, make a payment, or deploy a token have been removed.</p></article></div></section><section class="section"><h2>Original product screens</h2><div class="shots"><img src="assets/search.png" alt="MintLab address-search interface"><img src="assets/payment.png" alt="MintLab payment step"><img src="assets/deploy.png" alt="MintLab deployment confirmation step"></div></section></main><footer class="shell footer">Built by Xavier Kibet · <a href="../../">Back to portfolio</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MintLab — From a memorable token address to a finished launch. A project by Xavier Kibet.">
+  <title>MintLab — Xavier Kibet</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../screenshots.css">
+  <link rel="stylesheet" href="../../surfaces.css">
+  <link rel="stylesheet" href="../../contact.css">
+  <link rel="stylesheet" href="../project.css">
+  <script defer src="../../theme.js"></script>
+  <script defer src="../../lightbox.js"></script>
+  <script defer src="../demo-embed.js"></script>
+</head>
+<body class="case-page">
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="Xavier Kibet home">XK<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="../../#work">Work</a><a href="../../#skills">Skills</a><a href="../../#timeline">Timeline</a></nav>
+    <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button><a class="availability" href="../../#contact">Get in touch</a></div>
+  </header>
+  <main class="wrap">
+    <a class="case-back" href="../../?ecosystem=solana#work">← Selected work</a>
+    <section class="case-hero" aria-labelledby="project-title">
+      <div>
+        <p class="kicker">Memecoin launchpad · Solana</p>
+        <h1 id="project-title">MintLab</h1>
+        <p class="case-lede">From a memorable token address to a finished launch.</p>
+        <div class="case-actions"><a class="button acid" href="#demo">Try the demo <b aria-hidden="true">↓</b></a><a class="inline-link" href="#engineering">How it works <b aria-hidden="true">↓</b></a></div>
+      </div>
+      <div class="case-media">
+        <figure class="project-shot" tabindex="0" role="button" aria-label="Enlarge MintLab screenshot"><img src="assets/product-screen.png" alt="MintLab address search showing available prefix and suffix matches" fetchpriority="high"></figure>
+      </div>
+    </section>
+    <dl class="case-facts">
+      <div><dt>My role</dt><dd>Founder & engineer</dd></div>
+      <div><dt>Original product</dt><dd>100+ token deployments</dd></div>
+      <div><dt>Core technologies</dt><dd>Go · Solana · React</dd></div>
+    </dl>
+    <section id="demo" class="case-demo embedded-demo" aria-labelledby="demo-title">
+      <header class="demo-section-heading"><div><p class="kicker">Try it here</p><h2 id="demo-title">MintLab, in action.</h2></div><a class="inline-link" href="https://demos.xaviermilgo.com/mintlab/" target="_blank" rel="noopener noreferrer">Open in new tab <b aria-hidden="true">↗</b></a></header>
+      <p class="demo-context">Search pre-generated, validated addresses and send a sponsored memo signed by the selected vanity address. Token deployment is not part of this demo.</p>
+
+      <div class="demo-frame-wrap">
+        <iframe class="demo-frame" src="https://demos.xaviermilgo.com/mintlab/?embed=1" title="MintLab interactive demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" allow="clipboard-write" data-demo-origin="https://demos.xaviermilgo.com"></iframe>
+      </div>
+      <p class="demo-load-status" role="status">Loading the demo. You can also <a href="https://demos.xaviermilgo.com/mintlab/" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
+    </section>
+    <section class="case-section" aria-labelledby="ownership-title">
+      <h2 id="ownership-title">What I built.</h2>
+      <div class="case-body"><p>I built MintLab’s address search and token-launch flow, taking the product from engineering through launch and operations.</p>
+        <p>The product reached <strong>100+ deployments and 500+ Twitter followers.</strong> I wound it down when marketing operations became too expensive.</p></div>
+    </section>
+    <section class="case-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">The skills behind it.</h2>
+      <div class="case-body"><ul class="case-tech"><li><h3>Go</h3><p>Search and launch APIs connecting address discovery to the rest of the product.</p></li><li><h3>Solana</h3><p>Address validation, wallet signing, token deployment and transaction state.</p></li><li><h3>React</h3><p>The search, token-details, payment and deployment screens.</p></li></ul></div>
+    </section>
+    <section id="engineering" class="case-section" aria-labelledby="engineering-title">
+      <h2 id="engineering-title">How it works.</h2>
+      <div class="case-body"><ol class="case-flow"><li><h3>Find a match</h3><p>Search for a word at the start or end of an address. The underlying search had to produce valid Solana keypairs, not just strings that looked right.</p></li><li><h3>Make the search practical</h3><p>Seven-character matches were available in under five minutes on a single RTX 3090. Custom GPU work extended the search to ten-character matches.</p></li><li><h3>Carry it through launch</h3><p>Address selection fed into token details, distribution, payment and deployment. I owned the complete product flow, not only the search engine.</p></li></ol></div>
+    </section>
+    <nav class="case-next" aria-label="Project navigation"><a class="inline-link" href="../../#work">All projects <b aria-hidden="true">↗</b></a><div><p class="kicker">Next project</p><a href="../holdermaps/">HolderMaps <span aria-hidden="true">→</span></a></div></nav>
+  </main>
+  <footer><span>Xavier Kibet</span><a href="../../#contact">Let’s work together ↗</a></footer>
+  <dialog class="lightbox" aria-label="MintLab screenshot"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>
+</body>
+</html>

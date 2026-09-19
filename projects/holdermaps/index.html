@@ -1,1 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HolderMaps archive — Xavier Kibet</title><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../archive.css"></head><body><div class="archive-note"><div class="shell">ARCHIVE MODE — HolderMaps is no longer operating. This is a seeded visual explorer; it does not query current wallet or token data.</div></div><header class="top shell"><a class="back" href="../../">← Xavier Kibet</a><strong>HolderMaps / archive</strong></header><main class="shell"><section class="hero"><p class="eyebrow">Solana ownership visualisation · 2024</p><h1>HolderMaps</h1><p>A product for seeing token ownership as a network instead of a long list of addresses. The original app collected holder data, grouped relationships, and rendered the result for investigation.</p></section><section class="section"><h2>Seeded relationship view</h2><div class="map" role="img" aria-label="Sample token-holder network showing connected wallet clusters"><i class="map-line l1"></i><i class="map-line l2"></i><i class="n a" title="Largest holder cluster"></i><i class="n b" title="Linked wallet"></i><i class="n c" title="Linked wallet"></i><i class="n d" title="Linked wallet"></i><i class="n e" title="Linked wallet"></i><p class="map-label">sample cluster · node size = relative holding</p></div></section><section class="section"><h2>What I built</h2><div class="grid"><article class="card"><h3>Data path</h3><p>Used Dune queries to collect holder data, then normalised and prepared it for a searchable, visual product surface.</p></article><article class="card"><h3>Relationship view</h3><p>Translated token balances and wallet relationships into a network people could inspect rather than a raw address table.</p></article><article class="card"><h3>Scale</h3><p>The work covered more than two million wallets across the tracked token data.</p></article><article class="card"><h3>Archive boundary</h3><p>This preserved view is intentionally seeded from archived work. It makes no claim about live token ownership.</p></article></div></section><section class="section"><h2>Original comparison graphic</h2><div class="grid"><img src="assets/cost-comparison.png" alt="HolderMaps original cost comparison graphic" style="width:100%;background:#000"><article class="card"><h3>Product position</h3><p>HolderMaps aimed to make a difficult ownership-analysis task more accessible. This original asset captures how the product was positioned at the time.</p></article></div></section></main><footer class="shell footer">Built by Xavier Kibet · <a href="../../">Back to portfolio</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HolderMaps — Make token ownership easier to inspect than a table of addresses. A project by Xavier Kibet.">
+  <title>HolderMaps — Xavier Kibet</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../screenshots.css">
+  <link rel="stylesheet" href="../../surfaces.css">
+  <link rel="stylesheet" href="../../contact.css">
+  <link rel="stylesheet" href="../project.css">
+  <script defer src="../../theme.js"></script>
+  <script defer src="../../lightbox.js"></script>
+  <script defer src="../demo-embed.js"></script>
+</head>
+<body class="case-page">
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="Xavier Kibet home">XK<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="../../#work">Work</a><a href="../../#skills">Skills</a><a href="../../#timeline">Timeline</a></nav>
+    <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><span aria-hidden="true">◐</span></button><a class="availability" href="../../#contact">Get in touch</a></div>
+  </header>
+  <main class="wrap">
+    <a class="case-back" href="../../?ecosystem=solana#work">← Selected work</a>
+    <section class="case-hero" aria-labelledby="project-title">
+      <div>
+        <p class="kicker">Token ownership maps · Solana</p>
+        <h1 id="project-title">HolderMaps</h1>
+        <p class="case-lede">Make token ownership easier to inspect than a table of addresses.</p>
+        <div class="case-actions"><a class="button acid" href="#demo">Try the demo <b aria-hidden="true">↓</b></a><a class="inline-link" href="#engineering">How it works <b aria-hidden="true">↓</b></a></div>
+      </div>
+      <div class="case-media">
+        <figure class="project-shot" tabindex="0" role="button" aria-label="Enlarge HolderMaps screenshot"><img src="assets/product-screen.png" alt="HolderMaps product with a Solana token address search" fetchpriority="high"></figure>
+      </div>
+    </section>
+    <dl class="case-facts">
+      <div><dt>My role</dt><dd>Founder & engineer</dd></div>
+      <div><dt>Original product</dt><dd>2m+ wallet relationships</dd></div>
+      <div><dt>Core technologies</dt><dd>Go · Dune · D3</dd></div>
+    </dl>
+    <section id="demo" class="case-demo embedded-demo" aria-labelledby="demo-title">
+      <header class="demo-section-heading"><div><p class="kicker">Try it here</p><h2 id="demo-title">HolderMaps, in action.</h2></div><a class="inline-link" href="https://demos.xaviermilgo.com/holdermaps/" target="_blank" rel="noopener noreferrer">Open in new tab <b aria-hidden="true">↗</b></a></header>
+      <p class="demo-context">Explore a frozen selection of 10,000 Solana tokens from the September 15, 2026 snapshot. The demo reads static JSON rather than current chain data, and displays up to 500 holders per token.</p>
+
+      <div class="demo-frame-wrap">
+        <iframe class="demo-frame" src="https://demos.xaviermilgo.com/holdermaps/?embed=1" title="HolderMaps interactive demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" allow="clipboard-write" data-demo-origin="https://demos.xaviermilgo.com"></iframe>
+      </div>
+      <p class="demo-load-status" role="status">Loading the demo. You can also <a href="https://demos.xaviermilgo.com/holdermaps/" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
+    </section>
+    <section class="case-section" aria-labelledby="ownership-title">
+      <h2 id="ownership-title">What I built.</h2>
+      <div class="case-body"><p>I built the data pipeline and interactive interface for exploring Solana token ownership. The work covered <strong>more than two million wallet relationships.</strong></p>
+        <p>The challenge was turning a large collection of addresses and balances into a view people could navigate, while keeping the underlying data accessible.</p></div>
+    </section>
+    <section class="case-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">The skills behind it.</h2>
+      <div class="case-body"><ul class="case-tech"><li><h3>Go + Dune</h3><p>Collect and prepare token-holder data for the application.</p></li><li><h3>Elasticsearch</h3><p>Index wallet relationships for lookup.</p></li><li><h3>React + D3</h3><p>Render interactive ownership maps and connect visual exploration to holder data.</p></li></ul></div>
+    </section>
+    <section id="engineering" class="case-section" aria-labelledby="engineering-title">
+      <h2 id="engineering-title">How it works.</h2>
+      <div class="case-body"><ol class="case-flow"><li><h3>Collect ownership data</h3><p>Query token balances and holder records, then normalise the results for the product.</p></li><li><h3>Prepare the data for exploration</h3><p>Index the records so the interface can retrieve the relevant ownership information without asking users to navigate raw chain data.</p></li><li><h3>Make the map useful</h3><p>Show ownership visually, with node size representing relative holdings. Let users inspect individual holders alongside the wider distribution.</p></li></ol></div>
+    </section>
+    <nav class="case-next" aria-label="Project navigation"><a class="inline-link" href="../../#work">All projects <b aria-hidden="true">↗</b></a><div><p class="kicker">Next project</p><a href="../gemgunner/">GemGunner <span aria-hidden="true">→</span></a></div></nav>
+  </main>
+  <footer><span>Xavier Kibet</span><a href="../../#contact">Let’s work together ↗</a></footer>
+  <dialog class="lightbox" aria-label="HolderMaps screenshot"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>
+</body>
+</html>
